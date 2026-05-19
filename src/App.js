@@ -23,7 +23,8 @@ const App = () => {
     { id: 8, name: 'Lívia', role: 'Editora III', avatar: 'Lv', color: '#FDCB6E', gradient: 'linear-gradient(135deg, #FDCB6E, #ece0b7)' },
     { id: 9, name: 'Luana', role: 'Editora I', avatar: 'Ln', color: '#7feaf1', gradient: 'linear-gradient(135deg, #7feaf1, #364aa3)' },
     { id: 10, name: 'Nayre', role: 'Editora III', avatar: 'Ny', color: '#8bf3ba', gradient: 'linear-gradient(135deg, #8bf3ba, #6bf77d)' },
-    { id: 11, name: 'Vevé', role: 'Gerente de conteúdo', avatar: 'Vv', color: '#6C5CE7', gradient: 'linear-gradient(135deg, #6C5CE7, #A29BFE)' }
+    { id: 11, name: 'Vevé', role: 'Gerente de conteúdo', avatar: 'Vv', color: '#6C5CE7', gradient: 'linear-gradient(135deg, #6C5CE7, #A29BFE)' },
+    { id: 12, name: 'Anônimo', role: 'Gostaria de não me identificar', avatar: '🔐', color: '#939394', gradient: 'linear-gradient(135deg, #616161, #ffffff)' }
 
   ];
 
@@ -222,7 +223,7 @@ const fallbackSendToGoogleSheets = async (data) => {
               <span className="section-icon">👤</span>
               <h2>Quem é você?</h2>
             </div>
-            <p className="section-description">Selecione seu perfil para continuar</p>
+            <p className="section-description">Selecione seu perfil para continuar, ou selecione "Anônimo" caso prefira não se identificar.</p>
             
             <div className="avatar-grid">
               {editors.map((editor) => (
